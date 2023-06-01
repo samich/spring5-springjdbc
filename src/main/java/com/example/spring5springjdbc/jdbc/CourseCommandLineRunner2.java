@@ -19,6 +19,10 @@ public class CourseCommandLineRunner2 implements CommandLineRunner {
 		repository.insert(new Course(4, "Alibaba Cloud", "Barbara Martin"));
 		repository.insert(new Course(5, "AWS Practitioner", "Joseph Reed"));
 		
+		repository.delete(4);
+		
+		System.out.println(repository.findById(3));
+		
 	}
 	
 	
